@@ -722,7 +722,11 @@ def lineBot(op):
                 if text.lower() == 'clear lv3':
                     for mi_d in ban["lv3"]:
                         ban["lv3"] = {}
-                    cl.sendMessage(to, "lv3已清空")	
+                    cl.sendMessage(to, "lv3已清空")
+                elif text.lower() == 'clear ban':
+                    ban["blacklist"].clear()
+                    cl.sendMessage(to, "已清空黑名單")
+                    json.dump(ban, codecs.open('ban.json','w','utf-8'), sort_keys=True, indent=4, ensure_ascii=False)    
                 if text.lower() == 'reread on':
                     ban["reread"] = True
                     cl.sendMessage(to,"查詢收回開啟")
