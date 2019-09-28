@@ -1,0 +1,23 @@
+{
+    "invprotect": {
+        "c04ba61d31ea0f40c011bfe393555aaca": false,
+        "c2f1ba23735a5c582780f04f533db27f4": true,
+        "c8949a2bac12ef35bef7aa81da13a0499": true,
+        "cda8958e0a91f69863bf1f9905420dcaf": true,
+        "ce9bd9f9369e91854ce107ccad0a01d64": true
+    },
+    "protect": {
+        "c04ba61d31ea0f40c011bfe393555aaca": false,
+        "c2f1ba23735a5c582780f04f533db27f4": true,
+        "c8949a2bac12ef35bef7aa81da13a0499": true,
+        "cda8958e0a91f69863bf1f9905420dcaf": true,
+        "ce9bd9f9369e91854ce107ccad0a01d64": true
+    },
+    "qrprotect": {
+        "c04ba61d31ea0f40c011bfe393555aaca": false,
+        "c2f1ba23735a5c582780f04f533db27f4": true,
+        "c8949a2bac12ef35bef7aa81da13a0499": true,
+        "cda8958e0a91f69863bf1f9905420dcaf": true,
+        "ce9bd9f9369e91854ce107ccad0a01d64": true
+    }
+}

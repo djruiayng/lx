@@ -1,0 +1,48 @@
+{
+    "admin": [
+        "ufb880bbe91405e4b0f6ed9ff765fd428",
+        "u9f30143f1bd131b34b89eb891bb2e087",
+        "u0711eabbee9587d8e811ce99e4429bd2",
+        "u53251fd94934d4737562150dfea09add",
+        "u599e70954af6bf6a70d9a91b67cb713f",
+        "u1b104124bca1ad40a893fd5e18c3bbb3"
+    ],
+    "blacklist": {},
+    "bots": [
+        "ufb880bbe91405e4b0f6ed9ff765fd428"
+    ],
+    "contact": true,
+    "lv1": [],
+    "lv2": [],
+    "lv3": [],
+    "mimic": {
+        "copy": false,
+        "status": false,
+        "target": {
+            "u0711eabbee9587d8e811ce99e4429bd2": true,
+            "u9f30143f1bd131b34b89eb891bb2e087": true,
+            "ufb880bbe91405e4b0f6ed9ff765fd428": true
+        }
+    },
+    "owners": [
+        "ufb880bbe91405e4b0f6ed9ff765fd428",
+        "u9f30143f1bd131b34b89eb891bb2e087",
+        "u0711eabbee9587d8e811ce99e4429bd2",
+        "u53251fd94934d4737562150dfea09add",
+        "u599e70954af6bf6a70d9a91b67cb713f",
+        "u1b104124bca1ad40a893fd5e18c3bbb3",
+        "u4ace3ef40dc897bdcee947d184909199",
+        "udde6f27c7c174b270a16d3c0874c6ecc",
+        "ua7fcf1059f4cb08a5970a337d855dea1",
+        "uef65e5b0c7551b69df7d0c95da5a8a53",
+        "uad97fbc4bedcc8e50958ca0ebc6e880d"
+    ],
+    "reread": false,
+    "s": {},
+    "user": {
+        "int": 1,
+        "mid": 3,
+        "u0711eabbee9587d8e811ce99e4429bd2": 1,
+        "ufb880bbe91405e4b0f6ed9ff765fd428": 100
+    }
+}
