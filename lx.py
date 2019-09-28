@@ -517,7 +517,22 @@ def lineBot(op):
                             s += 7
                             txt += u'@Alin \n'
                         cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
-                    cl.sendMessage(to, "總共 {} 人".format(str(len(nama))))							
+                    cl.sendMessage(to, "總共 {} 人".format(str(len(nama))))
+                 elif text.lower().startswith("踢 "):
+                    key = eval(msg.contentMetadata["MENTION"])
+                    key["MENTIONEES"][0]["M"]
+                    targets = []
+                    for x in key["MENTIONEES"]:
+                        targets.append(x["M"])
+                    for target in targets:
+                        if target in ban["owners"]:
+                            pass
+                        else:
+                            try:
+                                kicker=random.choice([k1,k2,k3,k4])
+                                kicker.kickoutFromGroup(to,[target])
+                            except:
+                                pass       
             if sender in sender:
                 if text.lower() == 'gc':
                     tz = pytz.timezone("Asia/Makassar")				
@@ -561,22 +576,7 @@ def lineBot(op):
                             s += 7
                             txt += u'@Alin \n'
                         cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
-                    cl.sendMessage(to, "總共 {} 人".format(str(len(nama))))
-                elif text.lower().startswith("踢 "):
-                    key = eval(msg.contentMetadata["MENTION"])
-                    key["MENTIONEES"][0]["M"]
-                    targets = []
-                    for x in key["MENTIONEES"]:
-                        targets.append(x["M"])
-                    for target in targets:
-                        if target in ban["owners"]:
-                            pass
-                        else:
-                            try:
-                                kicker=random.choice([k1,k2,k3,k4])
-                                kicker.kickoutFromGroup(to,[target])
-                            except:
-                                pass    
+                    cl.sendMessage(to, "總共 {} 人".format(str(len(nama))))               
                 elif text.lower() =='adminall':
                     mc ="Grade\n"
                     no1 = 0
