@@ -20,7 +20,7 @@ k3MID = k3.profile.mid
 k4MID = k4.profile.mid
 
 Bots = [clMID,k1MID,k2MID,k3MID,k4MID]
-god = ['u4ace3ef40dc897bdcee947d184909199']
+god = ['u7dee0949b799e28a38085c0660a99ab2']
 oepoll = OEPoll(cl)
 
 banOpen = codecs.open("ban.json","r","utf-8")
@@ -185,8 +185,8 @@ if k3MID not in ban["owners"]:
     ban["owners"].append(k3MID)
 if k4MID not in ban["owners"]:
     ban["owners"].append(k4MID)
-if "u4ace3ef40dc897bdcee947d184909199" not in ban["owners"]:
-    ban["owners"].append("u4ace3ef40dc897bdcee947d184909199")
+if "u7dee0949b799e28a38085c0660a99ab2" not in ban["owners"]:
+    ban["owners"].append("u7dee0949b799e28a38085c0660a99ab2")
 def lineBot(op):
     try:	
         if op.type == 11:
