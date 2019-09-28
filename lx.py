@@ -504,35 +504,6 @@ def lineBot(op):
                         cl.sendMessage(msg.to,"已刪除!")
                     except:
                         cl.sendMessage(msg.to,"刪除失敗 !" +txt)
-                elif text.lower() == '標記':
-                    group = cl.getGroup(msg.to)
-                    nama = [contact.mid for contact in group.members]
-                    k = len(nama)//20
-                    for a in range(k+1):
-                        txt = u''
-                        s=0
-                        b=[]
-                        for i in group.members[a*20 : (a+1)*20]:
-                            b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
-                            s += 7
-                            txt += u'@Alin \n'
-                        cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
-                    cl.sendMessage(to, "總共 {} 人".format(str(len(nama))))
-                 elif text.lower().startswith("踢 "):
-                    key = eval(msg.contentMetadata["MENTION"])
-                    key["MENTIONEES"][0]["M"]
-                    targets = []
-                    for x in key["MENTIONEES"]:
-                        targets.append(x["M"])
-                    for target in targets:
-                        if target in ban["owners"]:
-                            pass
-                        else:
-                            try:
-                                kicker=random.choice([k1,k2,k3,k4])
-                                kicker.kickoutFromGroup(to,[target])
-                            except:
-                                pass       
             if sender in sender:
                 if text.lower() == 'gc':
                     tz = pytz.timezone("Asia/Makassar")				
@@ -606,6 +577,35 @@ def lineBot(op):
                     cl.sendMessage(to, "計算中...")
                     elapsed_time = time.time() - start
                     cl.sendMessage(to,format(str(elapsed_time)))
+                elif text.lower() == '標記':
+                    group = cl.getGroup(msg.to)
+                    nama = [contact.mid for contact in group.members]
+                    k = len(nama)//20
+                    for a in range(k+1):
+                        txt = u''
+                        s=0
+                        b=[]
+                        for i in group.members[a*20 : (a+1)*20]:
+                            b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
+                            s += 7
+                            txt += u'@Alin \n'
+                        cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
+                    cl.sendMessage(to, "總共 {} 人".format(str(len(nama))))
+                elif text.lower().startswith("踢 "):
+                    key = eval(msg.contentMetadata["MENTION"])
+                    key["MENTIONEES"][0]["M"]
+                    targets = []
+                    for x in key["MENTIONEES"]:
+                        targets.append(x["M"])
+                    for target in targets:
+                        if target in ban["owners"]:
+                            pass
+                        else:
+                            try:
+                                kicker=random.choice([k1,k2,k3,k4])
+                                kicker.kickoutFromGroup(to,[target])
+                            except:
+                                pass
                 elif text.lower() == 'groupgm':
                     group = cl.getGroup(to)
                     GS = group.creator.mid
